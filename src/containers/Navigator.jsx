@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ReactComponent as Logo } from '../assets/icons/monetary.svg';
+
 
 const NavWrapper = styled.div`
     width: 100%;
@@ -25,7 +25,7 @@ function Navigator() {
     return (
         <NavWrapper>
             <Nav />
-            <Span><Logo/></Span>
+            <Span></Span>
         </NavWrapper>
     )
 }
