@@ -5,7 +5,6 @@ import { ReactComponent as Logo} from '../assets/icons/monetary.svg'
 
 const NavWrapper = styled.div`
     width: 100%;
-    border: solid white 1px;
     box-sizing: border-box;
     display: grid;
     justify-items: center;
@@ -26,15 +25,14 @@ const Span = styled.span`
     width: auto;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    
+    cursor: pointer;
 `
 
-function Navigator(props) {
-    const [click, setClick] = useState(false);
+function Navigator() {
     return (
         <NavWrapper>
             <Nav />
-            <Span><Logo />{this.props.name}</Span>
+            <Span><Logo /></Span>
         </NavWrapper>
     )
 }
